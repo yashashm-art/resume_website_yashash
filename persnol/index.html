@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yashash M — Portfolio</title>
+
+  <style>
+    body{
+      margin:0;
+      font-family:Inter, Arial;
+      background:#0f0f11;
+      color:#e6e6e6;
+      line-height:1.6;
+    }
+    .container{
+      max-width:900px;
+      margin:auto;
+      padding:30px;
+    }
+    header{
+      text-align:center;
+      padding:25px 0;
+      border-bottom:1px solid #2b2b2b;
+      margin-bottom:25px;
+    }
+    h1{
+      margin:0;
+      font-size:34px;
+      color:#f0f0f0;
+    }
+    h2{
+      margin-top:40px;
+      color:#f0f0f0;
+    }
+    a{
+      color:#c7c7c7;
+    }
+
+    /* TABLE STYLE */
+    table{
+      width:100%;
+      border-collapse:collapse;
+      background:#1b1b1d;
+      border:1px solid #2c2c2e;
+      border-radius:10px;
+      overflow:hidden;
+      margin-top:10px;
+    }
+    th,td{
+      padding:12px;
+      text-align:left;
+    }
+    th{
+      background:#2c2c2e;
+    }
+    tr:nth-child(even){
+      background:#232325;
+    }
+
+    /* PROJECT DROPDOWN */
+    details{
+      background:#1b1b1d;
+      border:1px solid #2c2c2e;
+      padding:12px;
+      border-radius:10px;
+      margin-top:10px;
+    }
+    summary{
+      cursor:pointer;
+      font-weight:bold;
+      color:#dcdcdc;
+    }
+
+    /* SKILLS */
+    .skills li{
+      background:#2b2b2d;
+      padding:6px 10px;
+      border-radius:8px;
+      margin:5px;
+      display:inline-block;
+    }
+
+    /* BUTTONS */
+    .btn{
+      background:#3a3a3a;
+      padding:8px 14px;
+      font-size:14px;
+      border-radius:8px;
+      color:white !important;
+      text-decoration:none;
+      display:inline-block;
+      transition:0.25s;
+    }
+    .btn:hover{
+      background:#5a5a5a !important;
+      transform:scale(1.05);
+    }
+
+    /* FLOATING CONTACT BAR */
+    #floating-contact{
+      position:fixed;
+      bottom:20px;
+      right:20px;
+      background:#2c2c2e;
+      padding:12px 16px;
+      border-radius:12px;
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+      box-shadow:0 4px 16px rgba(0,0,0,0.4);
+      z-index:999;
+    }
+    #floating-contact a{
+      color:white;
+      text-decoration:none;
+      font-size:14px;
+      background:#3a3a3a;
+      padding:6px 10px;
+      border-radius:6px;
+      transition:0.25s;
+    }
+    #floating-contact a:hover{
+      background:#5a5a5a;
+      transform:scale(1.07);
+    }
+
+  </style>
+</head>
+<body>
+
+  <main class="container">
+
+    <!-- HEADER -->
+    <header>
+      <h1>YASHASH M</h1>
+      <p>Electronics & Telecommunications Engineer • IoT • Embedded Systems • Software Development</p>
+      <p>Bangalore, Karnataka • 8618077060 • 
+        <a href="mailto:yashasm06@gmail.com">yashasm06@gmail.com</a>
+      </p>
+
+      <!-- Buttons -->
+      <div style="margin-top:15px; display:flex; gap:12px; justify-content:center;">
+       <a class="btn" href="YASHASH M.pdf" download>Download Resume</a>
+
+        <a class="btn" href="#contact">Contact Info</a>
+      </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Recent Electronics graduate skilled in C, C++, Python, Java, and MATLAB. Experienced with Arduino, Raspberry Pi, and ESP32. Passionate about IoT solutions, automation, and real-world problem solving.</p>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <h2>Education</h2>
+      <table>
+        <tr><th>Course</th><th>Institute</th><th>Year</th><th>Score</th></tr>
+        <tr><td>B.E. in Electronics & Telecommunication</td><td>Sri Siddhartha Institute of Technology</td><td>2021–2025</td><td>CGPA: 6.90</td></tr>
+        <tr><td>Pre-University</td><td>Sri Basaveshwara PU College</td><td>2019–2021</td><td>83%</td></tr>
+        <tr><td>SSLC</td><td>Sri Sathya Sai Modern Public School</td><td>2018–2019</td><td>84%</td></tr>
+      </table>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <details><summary>Automated Greenhouse Monitoring System</summary>
+        <p>Automates plant watering by detecting soil dryness and improving greenhouse efficiency.</p>
+      </details>
+
+      <details><summary>Protection for Cropping Area</summary>
+        <p>Security system that detects intruders and protects crops automatically.</p>
+      </details>
+
+      <details><summary>Facial Recognition Door Lock</summary>
+        <p>Face recognition–based access control ensuring secure authentication.</p>
+      </details>
+
+      <details><summary>RFID Emergency Traffic Clearance</summary>
+        <p>RFID-based system that turns traffic signals green for ambulances.</p>
+      </details>
+
+      <details><summary>Robocultivator with Aquasmart Irrigation</summary>
+        <p>ESP32 & solar-powered robot for farming automation. Published paper (2025).</p>
+      </details>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>C</li><li>C++</li><li>Python</li><li>Java</li><li>MATLAB</li>
+        <li>SQL</li><li>DBMS</li>
+        <li>Arduino</li><li>ESP32</li><li>Raspberry Pi</li>
+      </ul>
+    </section>
+
+   <!-- ACHIVEMENT -->
+    <section id="Achivement">
+      <h2>Achivement</h2>
+      <table>
+        <tr><th>Activity</th><th>Provider</th><th>Place</th></tr>
+        <tr><td>Poster Designing</td><td>Dept. of ETE</td><td>1st</td></tr>
+        <tr><td>Poster Designing</td><td>SSIT During KALOTSAVA-25</td><td>1st</td></tr>
+        <tr><td>Best Student Recognition </td><td>Dept. of ETE During 4 years</td><td>-</td></tr> 
+      </table>
+    </section>
+
+    
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <table>
+        <tr><th>Certification</th><th>Provider</th></tr>
+        <tr><td>Process Mining</td><td>Celonis</td></tr>
+        <tr><td>Privacy & Security in Online Social Media</td><td>NPTEL</td></tr>
+        <tr><td>Basics of C#</td><td>Infosys Springboard</td></tr>
+        <tr><td>Citizen Data Science using Python</td><td>Infosys Springboard</td></tr>
+        <tr><td>JAVA</td><td>Infosys in collaboration with ETHNUS</td></tr>
+      </table>
+    </section>
+
+    <!-- LEADERSHIP -->
+    <section id="leadership">
+      <h2>Leadership</h2>
+      <table>
+        <tr><th>Role</th><th>Organization</th></tr>
+        <tr><td>Coordinator</td><td>High-Q Student Club</td></tr>
+        <tr><td>Joint Secretary / Design Head / Convenor</td><td>SSIT IEEE SB</td></tr>
+        <tr><td>Branch Representative</td><td>3rd Year</td></tr>
+        <tr><td>Chairman</td><td>IEEE-CASS Student Branch</td></tr>
+      </table>
+    </section>
+
+    <!-- VOLUNTEER EXPERIENCE -->
+    <section id="Volunteer Experience">
+      <h2>Volunteer Experience</h2>
+      <table>
+        <tr><th>Event</th><th>Organizer</th><th>Date</th></tr>
+        <tr><td>National Service Scheme</td><td>SSIT</td><td>2021- 2025</td></tr>
+        <tr><td>SAMARTHYA-2024</td><td>SSIT-IEEE-SB</td><td>14th & 15th May 2024</td></tr>
+        <tr><td>ICMNWC-2024</td><td>Dept. of ETE</td><td>4th & 5th December 2024</td></tr>
+        <tr><td>SAMARTHYA-2025</td><td>SSIT-IEEE-SB</td><td>24th & 29th March 2025</td></tr>
+      </table>
+    </section>
+
+
+    <!-- PUBLICATION -->
+    <section id="publication">
+      <h2>Publication</h2>
+      <table>
+        <tr><th>Title</th><th>Year</th></tr>
+        <tr><td>Robocultivator with Aquasmart Irrigation</td><td>2025</td></tr>
+      </table>
+    </section>
+
+    <!-- CONTACT INFO -->
+    <section id="contact" style="margin-top:40px;">
+      <h2>Contact Info</h2>
+      <div style="background:#1b1b1d;border:1px solid #2c2c2e;border-radius:12px;padding:20px;display:flex;flex-direction:column;gap:12px;max-width:500px;">
+        <div style="display:flex;gap:10px;align-items:center;">
+          <span>📞</span> <strong>8618077060</strong>
+        </div>
+        <div style="display:flex;gap:10px;align-items:center;">
+          <span>📧</span>
+          <a href="mailto:yashasm06@gmail.com" style="color:#d0d0d0;">yashasm06@gmail.com</a>
+        </div>
+        <div style="display:flex;gap:10px;align-items:center;">
+          <span>📍</span> Bangalore, Karnataka
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer style="text-align:center;margin-top:50px;color:#8e8e8e;">
+      © 2025 — Portfolio of Yashash M
+    </footer>
+
+  </main>
+
+  <!-- FLOATING CONTACT BAR -->
+  <div id="floating-contact">
+    <a href="#contact">📞 Contact</a>
+    <a href="mail to:yashasm06@gmail.com">✉️ Email</a>
+  </div>
+
+</body>
+</html>
